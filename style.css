@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(229, 57%, 11%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.img-bg {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50vh;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-color: transparent;
+  width: 1040px;
+}
+.gauche {
+  background-color: hsl(228, 56%, 26%);
+  width: 400px;
+  padding: 40px;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.droite {
+  background-color: hsl(228, 56%, 26%);
+  width: 600px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+}
+.droite p {
+  margin-bottom: 15px;
+  color: #fff;
+}
+.fylo {
+  margin-bottom: 30px;
+}
+.mini-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mini-logo .doc {
+  margin-right: 20px;
+  background-color: hsl(229, 57%, 11%);
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: hsl(229, 57%, 11%);
+}
+.progress .progress-bar {
+  display: block;
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.stock {
+  display: flex;
+  justify-content: space-between;
+}
+.progress .float {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: -90px;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.droite .in-droite .progress .float-span {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.float .nbr {
+  color: black;
+  font-size: 25px;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.one {
+  vertical-align: middle;
+}
+
+.eight {
+  vertical-align: baseline;
+}
+
+.five {
+  vertical-align: sub;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.name {
+  color: rgb(140, 140, 216);
+}
+
+@media (max-width: 997px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+  }
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .gauche {
+    margin-bottom: 15px;
+  }
+  .progress .float {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 260%;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .droite {
+    width: 400px;
+  }
+}
